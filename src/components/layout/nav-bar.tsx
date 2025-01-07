@@ -37,7 +37,7 @@ export const NavBar = () => {
         <nav className="flex p-1 justify-center min-h-[64px] items-center fixed w-full bg-[#171717] border-b border-b-neutral-800 lg:bg-[#121212]/80 lg:backdrop-blur-xl text-gray-300 z-50">
             <div className="flex flex-row transition-all items-center justify-between w-full xl:w-[80%] min-w-[300px]">
                 <section className='flex flex-row space-x-2 hover:cursor-pointer hover:bg-gray-300/5 p-2 rounded-sm'>
-                    <img src="/profileAvatar.webp" width={40} height={40} alt="" className='rounded-sm max-h-[40px]' />
+                    <img src="./profileAvatar.webp" width={40} height={40} alt="" className='rounded-sm max-h-[40px]' />
                     <div className='flex flex-col'>
                         <h2 className='text-[12px]'>Carlos Agustin Nicolas Cuello</h2>
                         <p className='text-[11px] text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-orange-700'>Front-End Developer</p>

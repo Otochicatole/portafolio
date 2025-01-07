@@ -40,7 +40,7 @@ const AboutMe = () => {
         {/* Header Section */}
         <motion.div variants={itemVariants} className="text-center mb-16">
           <motion.img
-            src="/profile.webp"
+            src="./profile.webp"
             alt="Perfil"
             className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-neutral-600"
             whileHover={{ scale: 1.1 }}

@@ -12,7 +12,7 @@ const ProjectsCard = () => {
       id: 1,
       title: "Plataforma de E-Commerce",
       description: "Una plataforma de Ventas completa con gestión de inventario, carrito de compras y gestión de usuarios.",
-      image: "/projects/shop.webp",
+      image: "./projects/shop.webp",
       technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Framer-motion", "TypeScript", "Next.js"],
       link: "https://google.com",
       github: "https://github.com/Otochicatole"
@@ -21,7 +21,7 @@ const ProjectsCard = () => {
       id: 2,
       title: "Panel de Gráficas",
       description: "Panel interactivo para visualización de métricas y datos con gráficos personalizables y en tiempo real.",
-      image: "/projects/analytics.webp",
+      image: "./projects/analytics.webp",
       technologies: ["React", "TypeScript", "Recharts.js", "Tailwind CSS", "Vite", "Framer-motion"],
       link: "https://google.com",
       github: "https://github.com/Otochicatole"
@@ -30,7 +30,7 @@ const ProjectsCard = () => {
       id: 3,
       title: "Sistema de Drag and Drop",
       description: "Una sistema que permite la organización interactiva de elementos mediante arrastrar y soltar.",
-      image: "/projects/drag.webp",
+      image: "./projects/drag.webp",
       technologies: ["React", "Tailwind CSS", "React-dnd", "Tailwind CSS", "Vite", "TypeScript"],
       link: "https://google.com",
       github: "https://github.com/Otochicatole"

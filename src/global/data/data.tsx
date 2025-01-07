@@ -2,22 +2,22 @@ import { FaBriefcase, FaRocket, FaReact, FaNode, FaDatabase, FaServer, FaCode, }
 import { TbTool } from "react-icons/tb";
 
 export const svgIcons = [
-    { src: "/src/global/svg/github-color-svgrepo-com.svg", alt: "GitHub" },
-    { src: "/src/global/svg/git-svgrepo-com.svg", alt: "Git" },
-    { src: "/src/global/svg/javascript-svgrepo-com.svg", alt: "JavaScript" },
-    { src: "/src/global/svg/typescript-svgrepo-com.svg", alt: "TypeScript" },
-    { src: "/src/global/svg/css-3-svgrepo-com.svg", alt: "CSS" },
-    { src: "/src/global/svg/html-5-svgrepo-com.svg", alt: "HTML" },
-    { src: "/src/global/svg/framer-svgrepo-com.svg", alt: "Framer Motion" },
-    { src: "/src/global/svg/mongo-svgrepo-com.svg", alt: "MongoDB" },
-    { src: "/src/global/svg/mongoose-svgrepo-com.svg", alt: "Mongoose" },
-    { src: "/src/global/svg/react-svgrepo-com.svg", alt: "React" },
-    { src: "/src/global/svg/nextjs-svgrepo-com.svg", alt: "Next.js" },
-    { src: "/src/global/svg/tailwind-svgrepo-com.svg", alt: "Tailwind CSS" },
-    { src: "/src/global/svg/vite-svgrepo-com.svg", alt: "Vite" },
-    { src: "/src/global/svg/figma-svgrepo-com.svg", alt: "Figma" },
-    { src: "/src/global/svg/sass-svgrepo-com.svg", alt: "Sass" },
-    { src: "/src/global/svg/express-svgrepo-com.svg", alt: "Express.js" },
+    { src: "./svg/github-color-svgrepo-com.svg", alt: "GitHub" },
+    { src: "./svg/git-svgrepo-com.svg", alt: "Git" },
+    { src: "./svg/javascript-svgrepo-com.svg", alt: "JavaScript" },
+    { src: "./svg/typescript-svgrepo-com.svg", alt: "TypeScript" },
+    { src: "./svg/css-3-svgrepo-com.svg", alt: "CSS" },
+    { src: "./svg/html-5-svgrepo-com.svg", alt: "HTML" },
+    { src: "./svg/framer-svgrepo-com.svg", alt: "Framer Motion" },
+    { src: "./svg/mongo-svgrepo-com.svg", alt: "MongoDB" },
+    { src: "./svg/mongoose-svgrepo-com.svg", alt: "Mongoose" },
+    { src: "./svg/react-svgrepo-com.svg", alt: "React" },
+    { src: "./svg/nextjs-svgrepo-com.svg", alt: "Next.js" },
+    { src: "./svg/tailwind-svgrepo-com.svg", alt: "Tailwind CSS" },
+    { src: "./svg/vite-svgrepo-com.svg", alt: "Vite" },
+    { src: "./svg/figma-svgrepo-com.svg", alt: "Figma" },
+    { src: "./svg/sass-svgrepo-com.svg", alt: "Sass" },
+    { src: "./svg/express-svgrepo-com.svg", alt: "Express.js" },
 ];
 
 export const experiences = [
@@ -46,7 +46,7 @@ export const certificationsData = [
       organization: "LinkedIn Learning",
       date: "ene 02, 2025",
       description: "Domina JavaScript para desarrollar aplicaciones web dinámicas y interactivas.",
-      image: "/certificados/javascript.webp"
+      image: "./certificados/javascript.webp"
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ export const certificationsData = [
       organization: "LinkedIn Learning",
       date: "ene 03, 2025",
       description: "React.js para construir interfaces de usuario dinámicas y reactivas.",  
-      image: "/certificados/react.webp"
+      image: "./certificados/react.webp"
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ export const certificationsData = [
       organization: "INET",
       date: "3 - 4 de octubre de 2019",
       description: "Ciudad de Mar del Plata, provincia de Buenos Aires.",
-      image: "/certificados/olimpiada.webp"
+      image: "./certificados/olimpiada.webp"
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ export const certificationsData = [
       organization: "INET",
       date: "29 de octubre - 2 de noviembre de 2019",
       description: "Ciudad de Buenos Aires.",
-      image: "/certificados/olimpiada-nacional.webp"
+      image: "./certificados/olimpiada-nacional.webp"
     }
   ]
 
