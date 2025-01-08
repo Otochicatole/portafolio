@@ -67,7 +67,7 @@ const ProjectsCard = () => {
   return (
     <div className=" animate-fade transition-all duration-300">
       <div className="mx-auto bg-black/20 border border-neutral-700/70 backdrop-blur-3xl shadow-2xl rounded-sm overflow-hidden">
-        <div className="p-8">
+        <div className="p-4 md:p-8 transition-all duration-300">
           <h1 className="text-4xl font-bold text-gray-100 text-center mb-4">
             Mis Proyectos
           </h1>
@@ -83,7 +83,7 @@ const ProjectsCard = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white/10 rounded-sm overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105"
+                className="bg-white/10 rounded-sm overflow-hidden shadow-xl transition-all duration-300 hover:bg-[#303030]"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img

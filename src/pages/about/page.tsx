@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaDownload, FaGithub, FaLinkedin} from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import { experiences, education, skillsPercentage } from "../../global/data/data";
 
 const AboutMe = () => {
@@ -27,7 +27,7 @@ const AboutMe = () => {
     link.href = './cv/cv.pdf';
     link.download = 'CV_Agustin_Cuello.pdf';
     link.click();
-};
+  };
 
   return (
     <div className="min-h-screen bg-neutral-900 text-gray-100 px-6 py-8 md:px-8">
@@ -52,11 +52,14 @@ const AboutMe = () => {
         {/* Professional Summary */}
         <motion.section variants={itemVariants} className="mb-16">
           <h2 className="text-3xl font-bold mb-6 ">Resumen Profesional</h2>
-          <p className="text-base text-neutral-400 leading-relaxed">
-            Desarrollador Frontend con un año de experiencia en la creación de interfaces web dinámicas y eficientes. Competente en React, TypeScript y JavaScript, con habilidades avanzadas en la implementación de estilos utilizando Tailwind CSS, Sass y CSS tradicional. Experiencia en la creación de animaciones e interactividad con Framer Motion y un sólido manejo de HTML semántico.
-            Familiaridad con tecnologías de backend como Node.js, Next.js y Express.js, además de experiencia trabajando con bases de datos MongoDB, Prisma y MySQL, lo que permite una colaboración efectiva en entornos de desarrollo full-stack.
-            Conocimientos en herramientas de control de versiones y colaboración como Git y GitHub. Gestión de proyectos ágil con Trello y Jira, garantizando la entrega de productos de alta calidad en plazos establecidos.
-            En búsqueda de oportunidades para seguir creciendo profesionalmente y contribuir con soluciones innovadoras en el desarrollo web.
+          <p className="text-base text-neutral-400 mb-1 leading-relaxed">
+            Desarrollador Frontend con un año de experiencia creando interfaces web dinámicas y eficientes, especializado en React, TypeScript y JavaScript. Competente en estilos con Tailwind CSS, Sass y CSS tradicional, además de animaciones interactivas con Framer Motion y HTML semántico.
+          </p>
+          <p className="text-base text-neutral-400 mb-1 leading-relaxed">
+            Familiaridad con tecnologías backend como Node.js, Next.js y Express.js, junto con experiencia en bases de datos MongoDB, Prisma y MySQL, lo que facilita la colaboración en entornos full-stack.
+          </p>
+          <p className="text-base text-neutral-400 mb-1 leading-relaxed">
+            Conocimientos en herramientas de control de versiones como Git y GitHub, y experiencia en gestión ágil de proyectos con Trello y Jira, asegurando entregas de calidad en tiempo y forma. Busco oportunidades para seguir creciendo y aportar soluciones innovadoras en desarrollo web.
           </p>
         </motion.section>
 
@@ -99,7 +102,11 @@ const AboutMe = () => {
               >
                 <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
                 <p className="text-neutral-400 mb-2">{exp.company} • {exp.period}</p>
-                <p className="text-gray-300">{exp.description}</p>
+                {exp.description.map((desc) => (
+                  <p key={desc.id} className=" text-gray-300 mb-2">
+                    {desc.text}
+                  </p>
+                ))}
               </motion.div>
             ))}
           </div>
