@@ -18,7 +18,7 @@ export const NavBar = () => {
             <nav
                 className="group bg-[#0e0e0e] hidden sm:flex flex-col justify-between fixed w-[80px] hover:w-[250px] transition-all ease-in-out overflow-hidden rounded-r-xl top-0 z-50 h-screen shadow-[0_0_10px_3px_rgba(255,255,255,0.1)]">
                 <div className="flex flex-col items-center justify-center mt-5 w-full min-h-[170px] h-auto p-2 gap-1">
-                    <img src="/me.webp" alt="Logo" className="w-[50px] h-[50px] group-hover:h-[100px] object-cover object-top group-hover:w-[100px] transition-all rounded-full" />
+                    <img src="./me.webp" alt="Logo" className="w-[50px] h-[50px] group-hover:h-[100px] object-cover object-top group-hover:w-[100px] transition-all rounded-full" />
                     <h1 className="text-center text-xs group-hover:text-lg transition-all font-bold">Agustin</h1>
                     <p className="text-[9px] text-center">Developer</p>
                 </div>

@@ -22,7 +22,7 @@ export default function Home() {
         <ModalContextProvider>
           <div className="absolute top-0 w-full h-auto z-0">
             <div className="relative w-full h-full overflow-hidden">
-              <img src="/background.webp" className="w-full max-h-[100vh]" />
+              <img src="./background.webp" className="w-full max-h-[100vh]" />
               <div className=" absolute bottom-0 w-full h-15 sm:h-50 lg:h-100 bg-gradient-to-t from-[#0e0e0e] to-transparent"></div>
             </div>
           </div>

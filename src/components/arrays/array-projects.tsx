@@ -20,7 +20,7 @@ export const projects: Project[] = [
         hasCode: true,
         codeLink: undefined,
         demoLink: undefined,
-        image: "/projects/ecommerce.webp"
+        image: "./projects/ecommerce.webp"
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const projects: Project[] = [
         hasCode: true,
         codeLink: undefined,
         demoLink: undefined,
-        image: "/projects/photograph.webp"
+        image: "./projects/photograph.webp"
     },
     {
         id: 3,
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         hasCode: true,
         codeLink: undefined,
         demoLink: undefined,
-        image: "/projects/java.webp"
+        image: "./projects/java.webp"
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ export const projects: Project[] = [
         hasCode: true,
         codeLink: undefined,
         demoLink: undefined,
-        image: "projects/barber.webp"
+        image: "./projects/barber.webp"
     },
     {
         id: 5,
@@ -64,7 +64,7 @@ export const projects: Project[] = [
         hasCode: true,
         codeLink: undefined,
         demoLink: undefined,
-        image: "/projects/analytics.webp"
+        image: "./projects/analytics.webp"
     },
     {
         id: 6,
@@ -75,6 +75,6 @@ export const projects: Project[] = [
         hasCode: true,
         codeLink: undefined,
         demoLink: undefined,
-        image: "/projects/drag.webp"
+        image: "./projects/drag.webp"
     }
 ];
