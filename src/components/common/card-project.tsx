@@ -1,7 +1,7 @@
 import { Project } from "../arrays/array-projects";
 
 
-export default function CardProject({project}: { project: Project }) {
+export default function CardProject({ project }: { project: Project }) {
     return (
         <>
             <div
@@ -14,10 +14,14 @@ export default function CardProject({project}: { project: Project }) {
                 ))}
                 </div>
                 <div className="flex justify-between items-center mt-6">
-                    <br/>
+                    <br />
                     <div className="flex items-center gap-3">
-                        <a className="cursor-pointer hover:text-blue-800" href={project.codeLink}>Code</a>
-                        <a className="cursor-pointer hover:text-blue-800" href={project.demoLink}>View</a>
+                        {project.hasCode && project.codeLink && (
+                            <a className="cursor-pointer hover:text-blue-800" href={project.codeLink}>Code</a>
+                        )}
+                        {project.demoLink && (
+                            <a className="cursor-pointer hover:text-blue-800" href={project.demoLink}>View</a>
+                        )}
                     </div>
                 </div>
             </div>

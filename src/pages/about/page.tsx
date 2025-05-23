@@ -5,6 +5,7 @@ import { MdOutlineComputer } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { TbDatabaseCog } from "react-icons/tb";
+import Footer from "../../components/layout/footer";
 
 export default function Summary() {
   const handleDownload = () => {
@@ -70,7 +71,7 @@ export default function Summary() {
             <span className="font-bold mr-2 flex flex-row items-center gap-3">
               <IoSettingsOutline /> Front-End Development:
             </span>
-            Transformo diseños en código limpio, responsivo y eficiente. Utilizo tecnologías como HTML, CSS, JavaScript y frameworks modernos como React, Angular o Astro para desarrollar sitios web interactivos, rápidos y compatibles con todos los navegadores.
+            Transformo diseños en código limpio, responsivo y eficiente. Utilizo tecnologías como HTML, CSS, JavaScript y frameworks modernos para desarrollar sitios web interactivos, rápidos y compatibles con todos los navegadores.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: 100 }}
@@ -107,6 +108,7 @@ export default function Summary() {
           <SkillsPortfolioSm />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

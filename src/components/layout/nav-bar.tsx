@@ -38,9 +38,10 @@ export const NavBar = () => {
                     ))}
                 </div>
                 <div className='flex flex-col h-[150px] p-2 items-center justify-center gap-5 py-5 group-hover:flex-row group-hover:items-end'>
-                    <FaGithub className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} />
-                    <FaLinkedin className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} />
-                    <FaTwitter className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} />
+
+                    <a href="https://github.com/Otochicatole/"><FaGithub className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
+                    <a href="https://www.linkedin.com/in/carlos-agustin-nicolas-cuello122/"><FaLinkedin className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
+                    <a href="https://x.com/Nico_c_dev"><FaTwitter className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
                 </div>
             </nav>
             <nav className="sm:hidden fixed bottom-0 left-0 w-full z-50 h-[60px] bg-white/5 backdrop-blur-3xl">
@@ -49,7 +50,7 @@ export const NavBar = () => {
                         <li key={link.path}>
                             <Link
                                 to={link.path}
-                                className={`${location.pathname === link.path? 'bg-white/5' : ''} flex flex-col items-center justify-center h-[40px] px-10 rounded-full`}
+                                className={`${location.pathname === link.path ? 'bg-white/5' : ''} flex flex-col items-center justify-center h-[40px] px-10 rounded-full`}
                             >
                                 {link.icon}
                             </Link>

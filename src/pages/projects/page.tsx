@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaSearch } from "react-icons/fa";
 import { projects } from "../../components/arrays/array-projects";
+import Footer from "../../components/layout/footer";
 
 export default function ProjectsPage() {
     const [search, setSearch] = useState("");
@@ -18,8 +19,8 @@ export default function ProjectsPage() {
                     <h1 className="text-3xl font-bold text-center mb-10">Proyectos</h1>
                     <motion.div
                         className={`relative w-full flex items-center bg-white rounded-sm shadow-md transition-all duration-300 max-w-[1000px] ${focused
-                                ? "ring-2 ring-blue-400 scale-105"
-                                : "ring-1 ring-gray-300"
+                            ? "ring-2 ring-blue-400 scale-105"
+                            : "ring-1 ring-gray-300"
                             }`}
                     >
                         <FaSearch className="text-gray-500 ml-4" size={20} />
@@ -47,7 +48,7 @@ export default function ProjectsPage() {
                                     whileHover={{ scale: 1.02 }}
                                 >
                                     <img
-                                        src="/background.webp"
+                                        src={project.image}
                                         alt={project.title}
                                         className="w-80 h-80 sm:w-40 sm:h-40  rounded-md object-cover"
                                     />
@@ -65,22 +66,26 @@ export default function ProjectsPage() {
                                             ))}
                                         </div>
                                         <div className="absolute bottom-6 right-[27%] sm:right-10 flex flex-wrap justify-center md:justify-start gap-4 mt-4">
-                                            <a
-                                                href={project.codeLink}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-2 hover:bg-black/50 hover:text-blue-500 p-2 px-4 rounded-lg text-blue-500 group-hover:text-blue-800  cursor-pointer trnasition-all duration-300"
-                                            >
-                                                <FaGithub size={20} /> Code
-                                            </a>
-                                            <a
-                                                href={project.demoLink}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-2 hover:bg-black/50 hover:text-green-500 p-2 px-3 rounded-lg text-green-500 group-hover:text-green-800  cursor-pointer trnasition-all duration-300"
-                                            >
-                                                <FaExternalLinkAlt size={20} /> View
-                                            </a>
+                                            {project.hasCode && project.codeLink && (
+                                                <a
+                                                    href={project.codeLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-2 hover:bg-black/50 hover:text-blue-500 p-2 px-4 rounded-lg text-blue-500 group-hover:text-blue-800  cursor-pointer trnasition-all duration-300"
+                                                >
+                                                    <FaGithub size={20} /> Code
+                                                </a>
+                                            )}
+                                            {project.demoLink && (
+                                                <a
+                                                    href={project.demoLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-2 hover:bg-black/50 hover:text-green-500 p-2 px-3 rounded-lg text-green-500 group-hover:text-green-800  cursor-pointer trnasition-all duration-300"
+                                                >
+                                                    <FaExternalLinkAlt size={20} /> View
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </motion.div>
@@ -91,6 +96,7 @@ export default function ProjectsPage() {
                     </motion.div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

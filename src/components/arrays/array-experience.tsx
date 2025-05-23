@@ -17,7 +17,7 @@ export const experiences = [
         id: 3,
         title: "Desarrollador Freelance",
         company: "Aplicación de Tienda Online (Next.js Fullstack)",
-        period: "28/11/2024 - 30/12/2024",
+        period: "28/11/2024 - Actualidad",
         description: [
             "Desarrollé una aplicación web fullstack para una tienda online utilizando Next.js, integrando React y Material UI para un frontend dinámico y funcional.",
             "En el backend, implementé servicios con API Routes, gestioné la base de datos con MongoDB y Mongoose, y desarrollé funcionalidades como carrito de compras, manejo de usuarios, inventario y pedidos.",

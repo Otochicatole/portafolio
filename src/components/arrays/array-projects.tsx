@@ -13,74 +13,68 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 1,
-        title: "Slashboard Desktop",
+        title: "Plataforma de E-Commerce",
         language: "TypeScript",
-        description: "A simple and convenient dashboard to monitor the activity and performance of your home servers.",
-        technologies: [
-            "typescript",
-            "tailwind",
-            "React"
-        ],
-        hasCode: false
+        description: "Una plataforma moderna de comercio electrónico para ropa, desarrollada utilizando Next.js, Tailwind CSS y TypeScript. En este proyecto, aprendí a construir aplicaciones web escalables y optimizadas para SEO, además de integrar pasarelas de pago y manejar el estado global de la aplicación.",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+        hasCode: true,
+        codeLink: undefined,
+        demoLink: undefined,
+        image: "/projects/ecommerce.webp"
     },
     {
         id: 2,
-        title: "Lidar",
-        language: "JavaScript",
-        description: "A VR game about escaping a dark maze by scanning your surroundings.",
-        technologies: [
-            "typescript",
-            "tailwind",
-            "React"
-        ],
-        hasCode: false
+        title: "Portafolio de Fotografía",
+        language: "TypeScript",
+        description: "Un sitio web profesional de portafolio de fotografía para una fotógrafa italiana, construido con Next.js, TypeScript y Tailwind CSS. Este proyecto me permitió mejorar mis habilidades en diseño responsivo, optimización de imágenes y creación de experiencias de usuario atractivas.",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+        hasCode: true,
+        codeLink: undefined,
+        demoLink: undefined,
+        image: "/projects/photograph.webp"
     },
     {
         id: 3,
-        title: "Amaze.me",
-        language: "TypeScript",
-        description: "A two-dimensional maze generator and visualizer in 3D space.",
-        technologies: [
-            "typescript",
-            "tailwind",
-            "React"
-        ],
-        hasCode: false
+        title: "API de Productos",
+        language: "Java",
+        description: "Una API RESTful robusta para la gestión de datos de productos, implementada utilizando Java y el framework Spring. En este proyecto, aprendí a diseñar y desarrollar APIs escalables, manejar bases de datos relacionales y aplicar principios de arquitectura limpia.",
+        technologies: ["Java", "Spring"],
+        hasCode: true,
+        codeLink: undefined,
+        demoLink: undefined,
+        image: "/projects/java.webp"
     },
     {
         id: 4,
-        title: "Avatar",
+        title: "Sistema Turnos",
         language: "TypeScript",
-        description: "A modern SVG avatar generator for the web.",
-        technologies: [
-            "typescript",
-            "tailwind",
-            "React"
-        ],
-        hasCode: false
+        description: "Un sistema integral de agendamiento de citas para una Barberia, desarrollado con Next.js, TypeScript y Tailwind CSS. Este proyecto me ayudó a profundizar en la gestión de formularios y validacion de datos.",
+        technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+        hasCode: true,
+        codeLink: undefined,
+        demoLink: undefined,
+        image: "projects/barber.webp"
     },
     {
         id: 5,
-        title: "Randomite",
+        title: "Herramienta de Visualización de Datos",
         language: "TypeScript",
-        description: "A basic gaussian random number generator with a modern chart visualiser.",
-        technologies: [
-            "typescript",
-            "tailwind",
-            "React"
-        ],
-        hasCode: false
+        description: "Una herramienta interactiva para la visualización y análisis de datos mediante gráficos, construida con React, TypeScript y Tailwind CSS. Este proyecto me permitió aprender sobre la manipulación de datos, la creación de gráficos dinámicos y la optimización del rendimiento en aplicaciones interactivas.",
+        technologies: ["React", "Tailwind CSS", "TypeScript"],
+        hasCode: true,
+        codeLink: undefined,
+        demoLink: undefined,
+        image: "/projects/analytics.webp"
     },
     {
         id: 6,
-        title: "Light Engine",
-        language: "Java",
-        description: "An inverse rasterizer engine demo, written in java using swing.",
-        technologies: [
-            "typescript",
-            "tailwind",
-            "React"
-        ],
-        hasCode: false
+        title: "Gestión de Tareas con Drag and Drop",
+        language: "TypeScript",
+        description: "Una aplicación de gestión de tareas con funcionalidad de arrastrar y soltar, desarrollada utilizando React, TypeScript y Tailwind CSS. Este proyecto me permitió mejorar mis habilidades en la implementación de interfaces de usuario interactivas y en la gestión del estado de componentes complejos.",
+        technologies: ["React", "Tailwind CSS", "TypeScript"],
+        hasCode: true,
+        codeLink: undefined,
+        demoLink: undefined,
+        image: "/projects/drag.webp"
     }
 ];
