@@ -1,6 +1,7 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { getRoutes } from './routes/routes';
 import {NavBar} from "./components/layout/nav-bar.tsx";
+import ScrollToTop from './components/layout/scroll-top.tsx';
 
 const App = () => {
     const routes = getRoutes();
@@ -8,6 +9,7 @@ const App = () => {
 
     return (
         <Router>
+            <ScrollToTop />
             <NavBar/>
             <Routes>
                 {routes.map((route) => (
