@@ -21,18 +21,18 @@ export default function Summary() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-center mt-3"
+        className="text-center mt-10"
       >
         <img
-          src="./me.jpg"
+          src="./me.webp"
           alt="Perfil"
-          className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-neutral-600"
+          className="rounded-lg w-50 h-60 mx-auto mb-6 object-cover object-top border-4 border-neutral-600"
         />
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hola Soy Agustin.
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Hola Soy Agustin
         </h1>
-        <p className="text-xl text-neutral-400">
-          Desarrollador de software a tiempo completo.
+        <p className="text-lg text-neutral-400 px-6">
+          Desarrollador de software a tiempo completo
         </p>
         <button
           onClick={handleDownload}
