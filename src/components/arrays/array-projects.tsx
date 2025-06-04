@@ -29,8 +29,8 @@ export const projects: Project[] = [
         description: "Un sitio web profesional de portafolio de fotografía para una fotógrafa italiana, construido con Next.js, TypeScript y Tailwind CSS. Este proyecto me permitió mejorar mis habilidades en diseño responsivo, optimización de imágenes y creación de experiencias de usuario atractivas.",
         technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
         hasCode: true,
-        codeLink: undefined,
-        demoLink: undefined,
+        codeLink: "https://github.com/Otochicatole/photograph-front",
+        demoLink: "https://maranzana.photography/",
         image: "./projects/photograph.webp"
     },
     {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
         description: "Una API RESTful robusta para la gestión de datos de productos, implementada utilizando Java y el framework Spring. En este proyecto, aprendí a diseñar y desarrollar APIs escalables, manejar bases de datos relacionales y aplicar principios de arquitectura limpia.",
         technologies: ["Java", "Spring"],
         hasCode: true,
-        codeLink: undefined,
+        codeLink: "https://github.com/Otochicatole/api-products",
         demoLink: undefined,
         image: "./projects/java.webp"
     },
@@ -51,8 +51,8 @@ export const projects: Project[] = [
         description: "Un sistema integral de agendamiento de citas para una Barberia, desarrollado con Next.js, TypeScript y Tailwind CSS. Este proyecto me ayudó a profundizar en la gestión de formularios y validacion de datos.",
         technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
         hasCode: true,
-        codeLink: undefined,
-        demoLink: undefined,
+        codeLink: "https://github.com/Otochicatole/turnos",
+        demoLink: "https://ventus.hair/",
         image: "./projects/barber.webp"
     },
     {
@@ -62,8 +62,8 @@ export const projects: Project[] = [
         description: "Una herramienta interactiva para la visualización y análisis de datos mediante gráficos, construida con React, TypeScript y Tailwind CSS. Este proyecto me permitió aprender sobre la manipulación de datos, la creación de gráficos dinámicos y la optimización del rendimiento en aplicaciones interactivas.",
         technologies: ["React", "Tailwind CSS", "TypeScript"],
         hasCode: true,
-        codeLink: undefined,
-        demoLink: undefined,
+        codeLink: "https://github.com/Otochicatole/analytics",
+        demoLink: "https://otochicatole.github.io/analytics/",
         image: "./projects/analytics.webp"
     },
     {
@@ -73,8 +73,8 @@ export const projects: Project[] = [
         description: "Una aplicación de gestión de tareas con funcionalidad de arrastrar y soltar, desarrollada utilizando React, TypeScript y Tailwind CSS. Este proyecto me permitió mejorar mis habilidades en la implementación de interfaces de usuario interactivas y en la gestión del estado de componentes complejos.",
         technologies: ["React", "Tailwind CSS", "TypeScript"],
         hasCode: true,
-        codeLink: undefined,
-        demoLink: undefined,
+        codeLink: "https://github.com/Otochicatole/draganddrop",
+        demoLink: "https://otochicatole.github.io/draganddrop/",
         image: "./projects/drag.webp"
     }
 ];
