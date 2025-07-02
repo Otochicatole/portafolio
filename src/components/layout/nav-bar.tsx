@@ -3,6 +3,7 @@ import Button from '../ui/button';
 import { GoHome, GoPerson } from 'react-icons/go';
 import { MdWorkOutline } from 'react-icons/md';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { RiAliensLine } from 'react-icons/ri';
 
 const links = [
     { path: '/', label: 'Home', icon: <GoHome size={25} /> },
@@ -17,7 +18,7 @@ export const NavBar = () => {
         <>
             <nav
                 className="group bg-black/10 backdrop-blur-3xl hidden sm:flex flex-col justify-between items-center py-4 fixed w-[80px] transition-all ease-in-out overflow-hidden top-0 z-50 h-full shadow-[0_0_10px_3px_rgba(255,255,255,0.1)]">
-                <div />
+                <RiAliensLine size={30} className='mt-3' />
                 <div className="flex flex-col items-center justify-center w-full p-2 gap-1">
                     {links.map(link => (
                         <Button className='flex w-full hover:shadow-[0_0_10px_10px_rgba(240,240,240,0.1),_inset_0_0_2px_2px_rgba(255,255,255,0.5)] rounded-lg transition-all duration-400 ease-in-out'

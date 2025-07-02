@@ -50,9 +50,9 @@ export default function ProjectsPage() {
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                        className="w-80 h-80 sm:w-40 sm:h-40  rounded-md object-cover"
+                                        className="w-80 h-80 sm:w-40 sm:h-40 sm:m-6 rounded-md object-cover"
                                     />
-                                    <div className="flex-1 h-80 sm:h-40 text-center md:text-left pb-20">
+                                    <div className="flex-1 h-fit text-center md:text-left pb-20">
                                         <h3 className="text-xl font-semibold">{project.title}</h3>
                                         <p className="">{project.description}</p>
                                         <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
