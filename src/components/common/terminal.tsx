@@ -1,10 +1,11 @@
-import { BsTerminal } from "react-icons/bs";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ModalTerminal from "./modal-terminal.tsx";
 import { useModalContext } from "../../global/contexts/modal-context.tsx";
 import { Experiences } from "./experience.tsx";
 import { Education } from "./education.tsx";
+import { PiTerminalWindowThin } from "react-icons/pi";
+import { BsTerminal } from "react-icons/bs";
 
 const Terminal: React.FC = () => {
     const [minimizeTerminal, setMinimizeTerminal] = useState<boolean>(false);
@@ -40,7 +41,7 @@ const Terminal: React.FC = () => {
                                     <div
                                         className="flex flex-row relative justify-between items-center ml-[10px] bg-neutral-950 w-[150px] lg:w-[250px] h-[30px] transition-all py-[19px] px-3 rounded-t-lg">
                                         <div className="flex flex-row items-center justify-center gap-2">
-                                            <BsTerminal className="text-[14px]" />
+                                            <PiTerminalWindowThin className="text-[20px]" />
                                             <h4 className="text-[12px] hidden lg:block">Windows PowerShell</h4>
                                             <h4 className="text-[12px] block lg:hidden">PowerShell</h4>
                                         </div>
@@ -99,15 +100,16 @@ const Terminal: React.FC = () => {
                             exit={{ y: 50, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             style={{ zIndex: 999 }}
-                            className="bg-neutral-950 fixed border-t border-l border-r border-neutral-700 bottom-[60px] sm:bottom-0 left-0 sm:left-auto sm:right-10 flex flex-row gap-3 items-center justify-between pr-3 w-full  sm:w-[300px] rounded-t-lg mt-20 cursor-pointer hover:bg-white/10 backdrop-blur-3xl"
+                            className="bg-neutral-950 fixed border-t border-l border-r border-neutral-700 bottom-[60px] sm:bottom-0 left-0 sm:left-auto sm:right-30 flex flex-row gap-3 items-center justify-between pr-3 w-full  sm:w-[300px] rounded-t-lg mt-20 cursor-pointer hover:bg-white/10 backdrop-blur-3xl"
                         >
-                            <div className="flex flex-row items-center justify-center gap-1 p-2 w-full h-full"
+                            <div className="flex flex-row items-center justify-between gap-1 p-2 w-full h-full"
                                 onClick={() => {
                                     open();
                                     setMinimizeTerminal(false);
                                 }}>
-                                <BsTerminal className="text-[18px]" />
-                                Terminal
+                                <PiTerminalWindowThin className="text-[20px] ml-1" />
+                                Windows PowerShell
+                                <div />
                             </div>
                             <button onClick={() => {
                                 setMinimizeTerminal(false)

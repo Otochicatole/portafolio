@@ -26,7 +26,7 @@ export default function Home() {
               <div className=" absolute bottom-0 w-full h-15 sm:h-50 lg:h-100 bg-gradient-to-t from-[#0e0e0e] to-transparent"></div>
             </div>
           </div>
-          <div className="flex flex-col m-2 mt-30 sm:ml-34 2xl:mx-80 z-20">
+          <div className="flex flex-col m-2 mt-30 sm:ml-34 sm:pr-12 2xl:mx-80 z-20">
             <LineTopButton>
               <div className="flex flex-row gap-4 items-center justify-between text-blue-400">
                 <div className="flex p-4 border-2 justify-center rounded-full items-center">

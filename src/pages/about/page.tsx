@@ -27,7 +27,7 @@ export default function Summary() {
           <img
             src="./me.webp"
             alt="Perfil"
-            className="rounded-lg w-50 h-60 mx-auto mb-6 object-cover object-top border-4 border-neutral-600"
+            className="rounded-full w-60 h-60 mx-auto mb-6 object-cover border-4 border-neutral-600"
           />
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hola Soy Agustin
