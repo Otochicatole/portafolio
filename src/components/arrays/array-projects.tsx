@@ -76,5 +76,16 @@ export const projects: Project[] = [
         codeLink: "https://github.com/Otochicatole/draganddrop",
         demoLink: "https://otochicatole.github.io/draganddrop/",
         image: "./projects/drag.webp"
-    }
+    },
+    {
+        id: 7,
+        title: "API de Productos, Categorias, Subcategorias  y Servicio de autenticacion.",
+        language: "Java",
+        description: "Servicio de autenticacion basico jwt con Spring Boot",
+        technologies: ["Java", "Spring Boot"],
+        hasCode: true,
+        codeLink: "https://github.com/Otochicatole/java-api-product-example",
+        demoLink: undefined,
+        image: "./projects/java.webp"
+    },
 ];

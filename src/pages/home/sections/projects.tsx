@@ -7,7 +7,7 @@ export const Projects = () => {
         <>
             <h2 className="text-2xl lg:text-4xl">Proyectos</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
-                {projects.map((project) => (
+                {projects.slice(0, 6).map((project) => (
                     <CardProject key={project.id} project={project}/>
                 ))}
             </div>
