@@ -88,4 +88,15 @@ export const projects: Project[] = [
         demoLink: undefined,
         image: "./projects/java.webp"
     },
+    {
+        id: 8,
+        title: "React Flow",
+        language: "TypeScript",
+        description: "React Flow es una biblioteca de gráficos interactivos para React. Permite crear y manipular gráficos complejos de forma sencilla y eficiente.",
+        technologies: ["React", "React Flow", "TypeScript"],
+        hasCode: true,
+        codeLink: "https://github.com/Otochicatole/react-flow",
+        demoLink: "https://flow-seven-khaki.vercel.app/",
+        image: "./projects/flow.webp"
+    },
 ];
