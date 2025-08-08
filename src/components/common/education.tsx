@@ -1,7 +1,7 @@
-import {motion} from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { education } from "../arrays/array-education";
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } }
 };

@@ -68,6 +68,17 @@ export const projects: Project[] = [
     },
     {
         id: 6,
+        title: "React Flow",
+        language: "TypeScript",
+        description: "React Flow es una biblioteca de gráficos interactivos para React. Permite crear y manipular gráficos complejos de forma sencilla y eficiente.",
+        technologies: ["React", "React Flow", "TypeScript"],
+        hasCode: true,
+        codeLink: "https://github.com/Otochicatole/react-flow",
+        demoLink: "https://flow-seven-khaki.vercel.app/",
+        image: "./projects/flow.webp"
+    },
+    {
+        id: 7,
         title: "Gestión de Tareas con Drag and Drop",
         language: "TypeScript",
         description: "Una aplicación de gestión de tareas con funcionalidad de arrastrar y soltar, desarrollada utilizando React, TypeScript y Tailwind CSS. Este proyecto me permitió mejorar mis habilidades en la implementación de interfaces de usuario interactivas y en la gestión del estado de componentes complejos.",
@@ -78,7 +89,7 @@ export const projects: Project[] = [
         image: "./projects/drag.webp"
     },
     {
-        id: 7,
+        id: 8,
         title: "API de Productos, Categorias, Subcategorias  y Servicio de autenticacion.",
         language: "Java",
         description: "Servicio de autenticacion basico jwt con Spring Boot",
@@ -87,16 +98,5 @@ export const projects: Project[] = [
         codeLink: "https://github.com/Otochicatole/java-api-product-example",
         demoLink: undefined,
         image: "./projects/java.webp"
-    },
-    {
-        id: 8,
-        title: "React Flow",
-        language: "TypeScript",
-        description: "React Flow es una biblioteca de gráficos interactivos para React. Permite crear y manipular gráficos complejos de forma sencilla y eficiente.",
-        technologies: ["React", "React Flow", "TypeScript"],
-        hasCode: true,
-        codeLink: "https://github.com/Otochicatole/react-flow",
-        demoLink: "https://flow-seven-khaki.vercel.app/",
-        image: "./projects/flow.webp"
-    },
+    }
 ];
