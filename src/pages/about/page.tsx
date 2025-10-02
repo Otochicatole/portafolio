@@ -10,7 +10,7 @@ import Footer from "../../components/layout/footer";
 export default function Summary() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "./cv.pdf";
+    link.href = "./cv2.pdf";
     link.download = "CV_Cuello_Agustin.pdf";
     link.click();
   };
