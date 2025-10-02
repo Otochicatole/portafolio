@@ -12,6 +12,7 @@ import { LuFileSpreadsheet, LuNotebook, LuUser } from "react-icons/lu";
 import SkillsPortfolio from "./sections/skills.tsx";
 import { IoIosArrowForward } from "react-icons/io";
 import { Planet } from "../../components/common/planet.tsx";
+import Rocket from "../../components/common/rocket.tsx";
 import Footer from "../../components/layout/footer.tsx";
 
 export default function Home() {
@@ -27,6 +28,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col m-2 mt-30 sm:ml-34 sm:pr-12 2xl:mx-80 z-20">
+            <div className="relative hidden sm:block">
+              <div className="absolute border border-blue-500 -top-25 left-90" >
+                <Rocket />
+
+                
+              </div>
+            </div>
             <LineTopButton>
               <div className="flex flex-row gap-4 items-center justify-between text-blue-400">
                 <div className="flex p-4 border-2 justify-center rounded-full items-center">
