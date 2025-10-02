@@ -34,8 +34,8 @@ export const NavBar = () => {
                     ))}
                 </div>
                 <div className=' hidden sm:flex flex-col h-[150px] p-1 items-center justify-center gap-5 py-5'>
-                    <a href="https://github.com/Otochicatole/"><FaGithub className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
-                    <a href="https://www.linkedin.com/in/carlos-agustin-nicolas-cuello122/"><FaLinkedin className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
+                    <a href="https://github.com/Otochicatole"><FaGithub className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
+                    <a href="https://www.linkedin.com/in/nico122-cuello"><FaLinkedin className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
                     <a href="https://x.com/Nico_c_dev"><FaTwitter className='hover:scale-150 hover:text-blue-500 cursor-pointer transition-all' size={20} /></a>
                 </div>
             </nav>
