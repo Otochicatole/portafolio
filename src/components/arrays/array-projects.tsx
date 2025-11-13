@@ -18,7 +18,7 @@ export const projects: Project[] = [
         description: "Una plataforma moderna de comercio electrónico para ropa, desarrollada utilizando Next.js, Tailwind CSS y TypeScript. En este proyecto, aprendí a construir aplicaciones web escalables y optimizadas para SEO, además de integrar pasarelas de pago y manejar el estado global de la aplicación.",
         technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
         hasCode: true,
-        codeLink: undefined,
+        codeLink: "https://github.com/Otochicatole/ecommerce-front",
         demoLink: undefined,
         image: "./projects/ecommerce.webp"
     },

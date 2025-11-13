@@ -16,6 +16,7 @@ import Rocket from "../../components/common/rocket.tsx";
 import Footer from "../../components/layout/footer.tsx";
 
 export default function Home() {
+
   return (
     <>
       <div className="flex flex-col overflow-x-hidden w-full pb-50 h-auto relative">
