@@ -6,6 +6,8 @@
   z-index: 100;
   transform: scale(0.3);
   transform-origin: center center;
+  animation: fly-in 1s forwards;
+  animation-delay: 0.5s;
 }
 
 .rocket .rocketBody {
@@ -299,3 +301,13 @@
   }
 }
 
+@keyframes fly-in {
+  0% {
+    transform: translateY(100vh) scale(0.3);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(0.3);
+    opacity: 1;
+  }
+}
