@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ModalTerminal from "./modal-terminal.tsx";
-import { useModalContext } from "../../global/contexts/modal-context.tsx";
+import { useModalContext } from "../../../global/contexts/modal-context.tsx";
 import { Experiences } from "./experience.tsx";
 import { Education } from "./education.tsx";
 import { PiTerminalWindowThin } from "react-icons/pi";

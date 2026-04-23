@@ -1,7 +1,7 @@
 import {Modal} from "@mui/joy";
 import {FaRegSquare} from "react-icons/fa";
 import {BsTerminal} from "react-icons/bs";
-import { useModalContext } from "../../global/contexts/modal-context";
+import { useModalContext } from "../../../global/contexts/modal-context.tsx";
 import {Experiences} from "./experience.tsx";
 import {Education} from "./education.tsx";
 import {useState} from "react";

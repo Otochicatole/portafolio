@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import Button from '../ui/button';
+import Button from '../ui/button.tsx';
 import { GoHome, GoPerson } from 'react-icons/go';
 import { MdWorkOutline } from 'react-icons/md';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';

@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
-import { skills } from "../../../components/arrays/array-skills.tsx"
+import { skills } from "../../../shared/arrays/array-skills.tsx"
 import {TbTool} from "react-icons/tb";
-import {SkillSection} from "../../../components/common/skills-components.tsx";
+import {SkillSection} from "./skills-components.tsx";
 import {BsDatabaseFillGear} from "react-icons/bs";
 import {MdSettings} from "react-icons/md";
 import { FaDatabase, FaReact } from "react-icons/fa";

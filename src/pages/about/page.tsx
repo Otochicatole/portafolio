@@ -1,11 +1,11 @@
-import { ExperiencesSM } from "../../components/common/experience-sm";
-import SkillsPortfolioSm from "../../components/common/skills-sm";
+import { ExperiencesSM } from "../../features/about/ui/experience-sm.tsx";
+import SkillsPortfolioSm from "../../features/about/ui/skills-sm.tsx";
 import { MdCloudQueue } from "react-icons/md";
 import { MdOutlineComputer } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { TbDatabaseCog } from "react-icons/tb";
-import Footer from "../../components/layout/footer";
+import Footer from "../../shared/components/layout/footer";
 
 export default function Summary() {
   const handleDownload = () => {

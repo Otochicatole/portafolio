@@ -1,19 +1,19 @@
-import Terminal from "../../components/common/terminal";
-import TypingHeader from "../../components/common/typing";
+import Terminal from "../../features/home/ui/terminal.tsx";
+import TypingHeader from "../../features/home/ui/typing.tsx";
 import {
   LineHorizontal,
   LineTopButton,
   LineVerticalLeft,
   LineVerticalRight,
-} from "../../components/ui/line";
+} from "../../features/home/ui/line.tsx";
 import { ModalContextProvider } from "../../global/contexts/modal-context";
-import { Projects } from "./sections/projects.tsx";
+import { Projects } from "../../features/home/ui/projects.tsx";
 import { LuFileSpreadsheet, LuNotebook, LuUser } from "react-icons/lu";
-import SkillsPortfolio from "./sections/skills.tsx";
+import SkillsPortfolio from "../../features/home/ui/skills.tsx";
 import { IoIosArrowForward } from "react-icons/io";
-import { Planet } from "../../components/common/planet.tsx";
-import Rocket from "../../components/common/rocket.tsx";
-import Footer from "../../components/layout/footer.tsx";
+import { Planet } from "../../features/home/ui/planet.tsx";
+import Rocket from "../../features/home/ui/rocket.tsx";
+import Footer from "../../shared/components/layout/footer.tsx";
 
 export default function Home() {
 
@@ -32,8 +32,6 @@ export default function Home() {
             <div className="relative hidden sm:block">
               <div className="absolute border border-blue-500 -top-25 left-90" >
                 <Rocket />
-
-                
               </div>
             </div>
             <LineTopButton>

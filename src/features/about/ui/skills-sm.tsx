@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { SkillSection } from "./skills-components";
+import { SkillSection } from "../../home/ui/skills-components.tsx";
 import { FaReact, FaDatabase } from "react-icons/fa";
 import { TbTool } from "react-icons/tb";
 import { BsDatabaseFillGear } from "react-icons/bs";
-import { skills } from "../arrays/array-skills";
+import { skills } from "../../../shared/arrays/array-skills.tsx";
 
 const SkillsPortfolioSm = () => {
   return (

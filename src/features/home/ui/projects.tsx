@@ -1,5 +1,5 @@
-import CardProject from "../../../components/common/card-project.tsx";
-import { projects } from "../../../components/arrays/array-projects.tsx";
+import CardProject from "../../../shared/components/common/card-project.tsx";
+import { projects } from "../../../shared/arrays/array-projects.tsx";
 
 
 export const Projects = () => {

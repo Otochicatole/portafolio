@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
-import { Project } from "../arrays/array-projects";
+import { Project } from "../../arrays/array-projects.tsx";
 
 interface CardProjectProps {
     project: Project;

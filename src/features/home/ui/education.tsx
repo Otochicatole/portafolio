@@ -1,5 +1,5 @@
 import { motion, Variants } from "framer-motion";
-import { education } from "../arrays/array-education";
+import { education } from "../../../shared/arrays/array-education.tsx";
 
 const itemVariants: Variants = {
     hidden: { opacity: 0, x: -50 },

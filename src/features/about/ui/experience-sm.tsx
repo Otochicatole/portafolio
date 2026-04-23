@@ -1,5 +1,5 @@
 import { motion, Variants } from "framer-motion";
-import { experiences } from "../arrays/array-experience";
+import { experiences } from "../../../shared/arrays/array-experience.tsx";
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, x: -50 },

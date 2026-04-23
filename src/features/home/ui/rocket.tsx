@@ -1,4 +1,4 @@
-import styles from '../ui/styles/rocket.module.css';
+import styles from '../../../shared/components/ui/styles/rocket.module.css';
 
 export default function Rocket() {
     return (

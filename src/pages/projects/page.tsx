@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaSearch } from "react-icons/fa";
-import { projects } from "../../components/arrays/array-projects";
-import Footer from "../../components/layout/footer";
+import { projects } from "../../shared/arrays/array-projects";
+import Footer from "../../shared/components/layout/footer";
 
 export default function ProjectsPage() {
     const [search, setSearch] = useState("");
