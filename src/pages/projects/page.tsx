@@ -19,16 +19,16 @@ export default function ProjectsPage() {
                 <section className="flex flex-col items-center justify-center ">
                     <h1 className="text-3xl font-bold text-center mb-10">Proyectos</h1>
                     <motion.div
-                        className={`relative w-full flex items-center bg-white rounded-sm shadow-md transition-all duration-300 max-w-[1000px] ${focused
-                            ? "ring-2 ring-blue-400 scale-105"
-                            : "ring-1 ring-gray-300"
+                        className={`relative w-full flex items-center shadow-md rounded-sm transition-all duration-300 max-w-150 lg:max-w-200 2xl:max-w-300 ${focused
+                            ? "ring-1 ring-blue-400 text-white scale-105"
+                            : "ring-1 ring-white/50"
                         }`}
                     >
                         <FaSearch className="text-gray-500 ml-4" size={20}/>
                         <input
                             type="text"
                             placeholder="Busca un Proyecto..."
-                            className="w-full p-3 pl-10 pr-4 text-gray-900 rounded-sm outline-none bg-transparent"
+                            className="w-full p-3 pl-4 pr-4 rounded-sm outline-none bg-transparent"
                             onChange={(e) => setSearch(e.target.value)}
                             onFocus={() => setFocused(true)}
                             onBlur={() => setFocused(false)}
