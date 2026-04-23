@@ -22,7 +22,7 @@ export const ExperiencesSM = () => (
     >
       <div className="hidden md:block absolute left-8 top-8 bottom-0 w-0.5 bg-gray-600">
         <motion.div
-          className="absolute w-[2px] h-[3px] bg-white/60 opacity-10"
+          className="absolute w-0.5 h-0.75 bg-white/60 opacity-10"
           style={{
             left: "50%",
             transform: "translateX(-50%)",
@@ -34,8 +34,8 @@ export const ExperiencesSM = () => (
           }}
           transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
         />
-        <div className="absolute left-[-3px] -top-1 w-2 h-2 bg-gray-600 rounded-full" />
-        <div className="absolute left-[-3px] -bottom-1 w-2 h-2 bg-gray-600 rounded-full" />
+        <div className="absolute -left-0.75 -top-1 w-2 h-2 bg-gray-600 rounded-full" />
+        <div className="absolute -left-0.75 -bottom-1 w-2 h-2 bg-gray-600 rounded-full" />
       </div>
       {experiences.map((experience) => (
         <motion.div
@@ -47,7 +47,7 @@ export const ExperiencesSM = () => (
           viewport={{ once: true }}
         >
           <div className="flex flex-row items-start">
-            <div className="hidden md:flex items-center justify-center ml-[8px] min-w-[50px] min-h-[50px] bg-[#0e0e0e] rounded-full border-2 border-gray-600 z-10 text-[#3b82f6]">
+            <div className="hidden md:flex items-center justify-center ml-2 min-w-12.5 min-h-12.5 bg-[#0e0e0e] rounded-full border-2 border-gray-600 z-10 text-[#3b82f6]">
               {experience.icon}
             </div>
             <div className="md:ml-6 p-6 rounded-xl border border-white/5 w-full transition-colors duration-500">
@@ -55,11 +55,14 @@ export const ExperiencesSM = () => (
               <p className="text-sm text-gray-400">
                 {experience.company} | {experience.period}
               </p>
-              <ul className="list-disc list-inside mt-2 text-gray-300">
-                {experience.description.map((desc, index) => (
-                  <li key={index}>{desc}</li>
-                ))}
-              </ul>
+                <ul className="mt-3 space-y-2 text-gray-300">
+                    {experience.description.map((desc, index) => (
+                        <li key={index} className="flex gap-2 items-start">
+                            <span className="mt-2 w-1.5 h-1.5 bg-white/60 rounded-full shrink-0" />
+                            <span className="wrap-break-word leading-relaxed">{desc}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
           </div>
         </motion.div>

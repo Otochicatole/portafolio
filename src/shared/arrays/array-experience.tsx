@@ -1,4 +1,4 @@
-import { FaBriefcase, FaRocket } from "react-icons/fa";
+import { FaBriefcase, FaRocket, FaLaptopCode } from "react-icons/fa";
 
 export const experiences = [
     {
@@ -25,5 +25,19 @@ export const experiences = [
             "Implementación de seguridad en autenticación y autorización mediante JWT, OAuth2 y NextAuth, asegurando protección de datos y control de accesos."
         ],
         icon: <FaBriefcase/>
+    },
+    {
+        id: 3,
+        title: "Desarrollador Front-end Freelance",
+        company: "Independiente · Remoto",
+        period: "Oct 2025 – Actualidad",
+        description: [
+            "Desarrollo de aplicaciones web a medida utilizando React.js, Next.js y TypeScript.",
+            "Diseño e implementación de interfaces modernas, priorizando performance, usabilidad y experiencia de usuario.",
+            "Integración con APIs REST y servicios externos, incluyendo funcionalidades en tiempo real.",
+            "Optimización de rendimiento, SEO y buenas prácticas de arquitectura en proyectos productivos.",
+            "Gestión completa del ciclo de desarrollo: desde la definición de requerimientos hasta el despliegue en producción."
+        ],
+        icon: <FaLaptopCode/>
     },
 ];
