@@ -20,7 +20,7 @@ export const NavBar = () => {
             <nav className="group bg-black/10 backdrop-blur-3xl hidden sm:flex items-center justify-between px-6 fixed top-0 left-0 w-full h-16 z-50 shadow-[0_0_10px_3px_rgba(255,255,255,0.1)]">
 
                 {/* Logo */}
-                <div className="flex items-center">
+                <div className="flex items-center min-w-21.5">
                     <RiAliensLine size={28} />
                 </div>
 
