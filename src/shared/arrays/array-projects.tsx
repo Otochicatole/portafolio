@@ -48,13 +48,13 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        title: "Sistema Turnos",
+        title: "Sistema Turnos y gestion de Barberia",
         language: "TypeScript",
         description: "Un sistema integral de agendamiento de citas para una Barberia, desarrollado con Next.js, TypeScript y Tailwind CSS. Este proyecto me ayudó a profundizar en la gestión de formularios y validacion de datos.",
         technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
         hasCode: true,
-        codeLink: "https://github.com/Otochicatole/turnos",
-        demoLink: "https://ventus.hair/",
+        codeLink: undefined,
+        demoLink: "https://ventus-app-v2.vercel.app/",
         image: "./projects/barber.webp"
     },
     {
@@ -89,17 +89,6 @@ export const projects: Project[] = [
         codeLink: "https://github.com/Otochicatole/api-products",
         demoLink: undefined,
         image: "./projects/java.webp"
-    },
-    {
-        id: 8,
-        title: "Sistema Turnos",
-        language: "TypeScript",
-        description: "Un sistema integral de agendamiento de citas para una Barberia, desarrollado con Next.js, TypeScript y Tailwind CSS. Este proyecto me ayudó a profundizar en la gestión de formularios y validacion de datos.",
-        technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-        hasCode: true,
-        codeLink: "https://github.com/Otochicatole/turnos",
-        demoLink: "https://ventus.hair/",
-        image: "./projects/barber.webp"
     },
     {
         id: 9,
