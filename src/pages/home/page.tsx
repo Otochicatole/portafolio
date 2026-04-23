@@ -29,7 +29,7 @@ export default function Home() {
                                 className=" absolute bottom-0 w-full h-15 sm:h-50 lg:h-100 bg-linear-to-t from-[#0e0e0e] to-transparent"/>
                         </div>
                     </div>
-                    <section className="flex flex-col m-2 mt-30 sm:ml-34 sm:pr-12 2xl:mx-80 z-20">
+                    <section className="flex flex-col m-2 mt-30 sm:ml-12 sm:pr-12 2xl:mx-80 z-20">
                         <div className="relative hidden sm:block">
                             <div className="absolute border border-blue-500 -top-25 left-90">
                                 <Rocket/>
@@ -45,7 +45,7 @@ export default function Home() {
                             </div>
                         </LineTopButton>
                         <LineVerticalLeft>
-                            <section className="flex flex-col p-6 ml-3.75 lg:ml-0 sm:p-6 lg:p-10">
+                            <section className="flex flex-col p-1 ml-3.75 lg:ml-0 sm:p-6 lg:p-10">
                                 <header className="flex flex-col w-full gap-10 px-4">
                                     <TypingHeader text={["Front End Developer", "Web Developer"]}/>
                                     <section className="flex flex-col gap-3 max-w-3xl">

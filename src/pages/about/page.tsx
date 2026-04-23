@@ -17,7 +17,7 @@ export default function Summary() {
 
   return (
     <>
-      <main className="flex flex-col sm:ml-25 overflow-x-hidden">
+      <main className="flex flex-col sm:mt-25 overflow-x-hidden">
         <motion.header
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

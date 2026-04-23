@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 
     return (
         <>
-            <main className="min-h-screen mt-25 text-gray-200 sm:pl-25 p-6 pb-40">
+            <main className="min-h-screen mt-25 text-gray-200 sm:pt-25 p-6 pb-40">
                 <section className="flex flex-col items-center justify-center ">
                     <h1 className="text-3xl font-bold text-center mb-10">Proyectos</h1>
                     <motion.div

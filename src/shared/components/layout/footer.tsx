@@ -2,7 +2,7 @@ import styles from './styles/footer.module.css';
 
 export default function Footer() {
     return (
-        <div className="w-full h-[600px] z-0 pb-[60px] sm:pb-0 relative overflow-hidden">
+        <div className="w-full h-150 z-0 pb-15 sm:pb-0 relative overflow-hidden">
             <div className={styles.container} style={{ position: 'absolute', inset: 0, marginTop: '100px' }}></div>
             <div 
                 className="absolute inset-0 pointer-events-none"

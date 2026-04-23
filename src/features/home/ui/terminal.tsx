@@ -24,7 +24,7 @@ const Terminal: React.FC = () => {
                     className="text-[#3b82f6]">Educación</span></h2>
             </div>
             <div
-                className={`flex flex-col w-full min-h-[600px] transition-all ease-in-out rounded-lg ${minimizeTerminal && 'bg-white/3  justify-center items-center'}`}>
+                className={`flex flex-col w-full min-h-150 transition-all ease-in-out rounded-lg ${minimizeTerminal && 'bg-white/3  justify-center items-center'}`}>
                 <h1 className={`text-2xl text-gray-500 ${minimizeTerminal ? 'block animate-pulse' : 'hidden'}`}>Terminal
                     Minimizada</h1>
                 {!closeTerminal && (
@@ -33,13 +33,13 @@ const Terminal: React.FC = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
-                        className={`flex flex-col w-[100%] h-[600px] transition-all border border-neutral-800 rounded-lg overflow-hidden ${minimizeTerminal ? 'hidden' : ''}`}
+                        className={`flex flex-col w-full h-150 transition-all border border-neutral-800 rounded-lg overflow-hidden ${minimizeTerminal ? 'hidden' : ''}`}
                     >
-                        <div className="flex flex-row h-[45px] bg-neutral-800 w-full">
+                        <div className="flex flex-row h-11.25 bg-neutral-800 w-full">
                             <div className="flex flex-row items-end w-full">
                                 <div className="flex flex-col items-center">
                                     <div
-                                        className="flex flex-row relative justify-between items-center ml-[10px] bg-neutral-950 w-[150px] lg:w-[250px] h-[30px] transition-all py-[19px] px-3 rounded-t-lg">
+                                        className="flex flex-row relative justify-between items-center ml-2.5 bg-neutral-950 w-37.5 lg:w-62.5 h-7.5 transition-all py-4.75 px-3 rounded-t-lg">
                                         <div className="flex flex-row items-center justify-center gap-2">
                                             <PiTerminalWindowThin className="text-[20px]" />
                                             <h4 className="text-[12px] hidden lg:block">Windows PowerShell</h4>
@@ -62,11 +62,11 @@ const Terminal: React.FC = () => {
                             </div>
                             <div className="flex flex-row">
                                 <button onClick={() => setMinimizeTerminal(true)}
-                                    className="flex items-center justify-center w-[45px] text-4xl hover:bg-white/5 pb-2">-
+                                    className="flex items-center justify-center w-11.25 text-4xl hover:bg-white/5 pb-2">-
                                 </button>
                                 <ModalTerminal minimize={() => setMinimizeTerminal(true)} />
                                 <button onClick={() => setCloseTerminal(true)}
-                                    className="flex items-center justify-center w-[45px] text-2xl hover:bg-red-800 pb-2">x
+                                    className="flex items-center justify-center w-11.25 text-2xl hover:bg-red-800 pb-2">x
                                 </button>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const Terminal: React.FC = () => {
                             exit={{ y: 50, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             style={{ zIndex: 999 }}
-                            className="bg-neutral-950 fixed border-t border-l border-r border-neutral-700 bottom-[60px] sm:bottom-0 left-0 sm:left-auto sm:right-30 flex flex-row gap-3 items-center justify-between pr-3 w-full  sm:w-[300px] rounded-t-lg mt-20 cursor-pointer hover:bg-white/10 backdrop-blur-3xl"
+                            className="bg-neutral-950 fixed border-t border-l border-r border-neutral-700 bottom-15 sm:bottom-0 left-0 sm:left-auto sm:right-30 flex flex-row gap-3 items-center justify-between pr-3 w-full  sm:w-[300px] rounded-t-lg mt-20 cursor-pointer hover:bg-white/10 backdrop-blur-3xl"
                         >
                             <div className="flex flex-row items-center justify-between gap-1 p-2 w-full h-full"
                                 onClick={() => {
@@ -129,7 +129,7 @@ const Terminal: React.FC = () => {
                         onClick={() => {
                             setCloseTerminal(false);
                         }}
-                        className="bg-white/5 flex flex-row gap-3 items-center justify-center p-3 w-[300px] h-[300px] rounded-lg mt-20 cursor-pointer hover:bg-white/10"
+                        className="bg-white/5 flex flex-row gap-3 items-center justify-center p-3 w-75 h-75 rounded-lg mt-20 cursor-pointer hover:bg-white/10"
                     >
                         <BsTerminal className="text-[88px]" />
                     </motion.div>
