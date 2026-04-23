@@ -17,8 +17,8 @@ export default function Summary() {
 
   return (
     <>
-      <div className="flex flex-col sm:ml-25 overflow-x-hidden">
-        <motion.div
+      <main className="flex flex-col sm:ml-25 overflow-x-hidden">
+        <motion.header
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -48,7 +48,7 @@ export default function Summary() {
               Download CV
             </span>
           </button>
-        </motion.div>
+        </motion.header>
         <section className="mb-16 flex p-3 flex-col items-center justify-center">
           <h2 className="text-3xl font-bold mb-10 mt-6 text-center">Lo que hago</h2>
           <div className="max-w-[1000px] flex flex-col sm:grid sm:grid-flow-col sm:grid-rows-2 p-3 gap-10 mb-10">
@@ -99,17 +99,17 @@ export default function Summary() {
             </motion.p>
           </div>
         </section>
-        <div className="flex flex-col xl:flex-row mt-[70px] justify-center gap-3 pb-40">
-          <div className="flex flex-col xl:w-[50%]">
+        <section className="flex flex-col xl:flex-row mt-17.5 justify-center gap-3 pb-40">
+          <section className="flex flex-col xl:w-[50%]">
             <h2 className="text-3xl p-3 text-center">Experience</h2>
             <ExperiencesSM />
-          </div>
-          <div className="flex flex-col xl:w-[50%]">
+          </section>
+          <section className="flex flex-col xl:w-[50%]">
             <h2 className="text-3xl p-3 text-center">Skills</h2>
             <SkillsPortfolioSm />
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </main>
       <Footer />
     </>
   );

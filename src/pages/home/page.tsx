@@ -19,17 +19,17 @@ export default function Home() {
 
     return (
         <>
-            <div className="flex flex-col overflow-x-hidden w-full pb-50 h-auto relative">
+            <main className="flex flex-col overflow-x-hidden w-full pb-50 h-auto relative">
                 <Planet/>
                 <ModalContextProvider>
                     <div className="absolute top-0 w-full h-auto z-0">
                         <div className="relative w-full h-full overflow-hidden">
-                            <img src="./background.webp" className="w-full max-h-[100vh]"/>
+                            <img src="./background.webp" className="w-full max-h-screen"/>
                             <div
-                                className=" absolute bottom-0 w-full h-15 sm:h-50 lg:h-100 bg-gradient-to-t from-[#0e0e0e] to-transparent"></div>
+                                className=" absolute bottom-0 w-full h-15 sm:h-50 lg:h-100 bg-linear-to-t from-[#0e0e0e] to-transparent"/>
                         </div>
                     </div>
-                    <div className="flex flex-col m-2 mt-30 sm:ml-34 sm:pr-12 2xl:mx-80 z-20">
+                    <section className="flex flex-col m-2 mt-30 sm:ml-34 sm:pr-12 2xl:mx-80 z-20">
                         <div className="relative hidden sm:block">
                             <div className="absolute border border-blue-500 -top-25 left-90">
                                 <Rocket/>
@@ -45,52 +45,54 @@ export default function Home() {
                             </div>
                         </LineTopButton>
                         <LineVerticalLeft>
-                            <div className="flex flex-col p-6 ml-[15px] lg:ml-0 sm:p-6 lg:p-10">
-                                <TypingHeader text={["Front End Developer", "Web Developer"]}/>
-                                <h1 className="text-xl sm:text-3xl font-extralight mt-3 p-3">
-                                    Carlos Agustin Nicolas Cuello
-                                </h1>
-                                <section className="w-full px-4">
-                                    <div className="max-w-3xl">
+                            <section className="flex flex-col p-6 ml-3.75 lg:ml-0 sm:p-6 lg:p-10">
+                                <header className="flex flex-col w-full gap-10 px-4">
+                                    <TypingHeader text={["Front End Developer", "Web Developer"]}/>
+                                    <section className="flex flex-col gap-3 max-w-3xl">
+                                        <h1 className="text-xl sm:text-3xl font-extralight mt-3">
+                                            Carlos Agustin Nicolas Cuello
+                                        </h1>
                                         <p className="text-sm leading-8 text-white/60 md:leading-9">
                                             Desarrollo soluciones web combinando diseño y tecnología. Me especializo en
-                                            front-end, creando interfaces modernas, responsivas y eficientes, y complemento
-                                            mi trabajo con conocimientos en back-end y gestión de servidores para abordar
+                                            front-end, creando interfaces modernas, responsivas y eficientes, y
+                                            complemento
+                                            mi trabajo con conocimientos en back-end y gestión de servidores para
+                                            abordar
                                             proyectos de forma más completa.
                                         </p>
-                                    </div>
-                                </section>
-                                <div className="flex flex-col w-full min-h-[600px] mt-20 transition-all">
-                                    <div className="relative flex flex-col min-h-[600px] w-full mt-20 lg:p-3 sm:px-10">
+                                    </section>
+                                </header>
+                                <section className="flex flex-col w-full min-h-150 mt-20 transition-all">
+                                    <div className="relative flex flex-col min-h-150 w-full mt-20 lg:p-3 sm:px-10">
                                         <div
-                                            className="absolute -left-[64px] hidden sm:flex top-3 items-center justify-center w-[50px] h-[50px] bg-[#0e0e0e] z-50 rounded-full border-2 border-[#3b82f6] shadow-[0_0_25px_10px_rgba(59,130,241,0.5),_inset_0_0_25px_10px_rgba(59,130,241,0.2)] ">
+                                            className="absolute -left-16 hidden sm:flex top-3 items-center justify-center w-12.5 h-12.5 bg-[#0e0e0e] z-50 rounded-full border-2 border-[#3b82f6] shadow-[0_0_25px_10px_rgba(59,130,241,0.5),inset_0_0_25px_10px_rgba(59,130,241,0.2)] ">
                                             <LuUser className="text-[16px] text-[#3b82f6]"/>
                                         </div>
                                         <Terminal/>
                                     </div>
-                                </div>
-                                <div className="relative flex flex-col mt-20 lg:p-3 sm:px-10">
+                                </section>
+                                <section className="relative flex flex-col mt-20 lg:p-3 sm:px-10">
                                     <div
-                                        className="absolute -left-[64px] hidden sm:flex top-3 items-center justify-center w-[50px] h-[50px] bg-[#0e0e0e] z-50 rounded-full border-2 border-[#5f00b8] shadow-[0_0_25px_10px_rgba(95,0,184,0.5),_inset_0_0_25px_10px_rgba(95,0,184,0.2)] ">
+                                        className="absolute -left-16 hidden sm:flex top-3 items-center justify-center w-12.5 h-12.5 bg-[#0e0e0e] z-50 rounded-full border-2 border-[#5f00b8] shadow-[0_0_25px_10px_rgba(95,0,184,0.5),inset_0_0_25px_10px_rgba(95,0,184,0.2)]">
                                         <LuNotebook className="text-[16px] text-purple-400"/>
                                     </div>
                                     <Projects/>
-                                </div>
-                            </div>
+                                </section>
+                            </section>
                         </LineVerticalLeft>
                         <LineHorizontal/>
                         <LineVerticalRight>
-                            <div className="relative flex flex-col min-h-[800px] lg:p-3 sm:px-10">
+                            <section className="relative flex flex-col min-h-200 lg:p-3 sm:px-10">
                                 <SkillsPortfolio/>
                                 <div
-                                    className="absolute -right-[24px] hidden sm:flex top-3 items-center justify-center w-[50px] h-[50px] bg-[#0e0e0e] z-50 rounded-full border-2 border-[#00df56] shadow-[0_0_25px_10px_rgba(0,223,86,0.5),_inset_0_0_25px_10px_rgba(0,223,86,0.2)] ">
+                                    className="absolute -right-6 hidden sm:flex top-3 items-center justify-center w-12.5 h-12.5 bg-[#0e0e0e] z-50 rounded-full border-2 border-[#00df56] shadow-[0_0_25px_10px_rgba(0,223,86,0.5),inset_0_0_25px_10px_rgba(0,223,86,0.2)]">
                                     <LuNotebook className="text-[16px] text-green-200"/>
                                 </div>
-                            </div>
+                            </section>
                         </LineVerticalRight>
-                    </div>
+                    </section>
                 </ModalContextProvider>
-            </div>
+            </main>
             <Footer/>
         </>
     );
