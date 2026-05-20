@@ -37,7 +37,7 @@ const TypingHeader = ({ text }: { text: string[] }) => {
 
     return (
         <motion.div
-            className="flex items-center font-extralight text-3xl lg:text-6xl transition-all text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-500 max-w-[600px]  font-sans animate-fade"
+            className="flex items-center whitespace-nowrap font-extralight text-3xl lg:text-6xl transition-all text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-500 font-sans animate-fade"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
